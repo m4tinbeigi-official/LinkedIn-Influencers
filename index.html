@@ -63,7 +63,7 @@
             <input type="text" id="searchInput" class="form-control" placeholder="جستجو بر اساس نام یا عنوان...">
         </div>
 
-        <div id="influencersContainer">
+        <div id="influencersContainer" class="row">
             <!-- کارت‌های اینفلوئنسرها به صورت داینامیک بارگذاری می‌شوند -->
         </div>
     </div>
@@ -77,7 +77,8 @@
             try {
                 const response = await fetch('influencers.json');
                 const data = await response.json();
-                displayInfluencers(data);
+                displayInfluencers(data); // نمایش همه اینفلوئنسرها
+                enableSearch(data); // فعال کردن قابلیت جستجو
             } catch (error) {
                 console.error('خطا در بارگذاری داده‌ها:', error);
             }
@@ -92,7 +93,7 @@
                 card.className = 'col-md-4';
                 card.innerHTML = `
                     <div class="influencer-card">
-                        <h5 class="card-title">${influencer.Name} (${influencer.Num. Followers})</h5>
+                        <h5 class="card-title">${influencer.Name} (${influencer['Num. Followers']})</h5>
                         <p><strong>عنوان:</strong> ${influencer.Title}</p>
                         <p><strong>مهارت‌ها:</strong> ${influencer['Top Skills']}</p>
                         <p><strong>تماس:</strong> ${influencer['Email / Contact']}</p>
@@ -103,19 +104,17 @@
             });
         }
 
-        // جستجو
-        document.getElementById('searchInput').addEventListener('input', function(event) {
-            const query = event.target.value.toLowerCase();
-            fetch('influencers.json')
-                .then(response => response.json())
-                .then(data => {
-                    const filteredData = data.filter(influencer => {
-                        return influencer.Name.toLowerCase().includes(query) || influencer.Title.toLowerCase().includes(query);
-                    });
-                    displayInfluencers(filteredData);
-                })
-                .catch(error => console.error('خطا در بارگذاری داده‌ها:', error));
-        });
+        // فعال کردن قابلیت جستجو
+        function enableSearch(data) {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function(event) {
+                const query = event.target.value.toLowerCase();
+                const filteredData = data.filter(influencer => {
+                    return influencer.Name.toLowerCase().includes(query) || influencer.Title.toLowerCase().includes(query);
+                });
+                displayInfluencers(filteredData);
+            });
+        }
 
         // بارگذاری داده‌ها هنگام بارگذاری صفحه
         loadInfluencersData();
