@@ -50,6 +50,19 @@
             width: 100%;
             border: 1px solid #ddd;
         }
+        .influencer-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        .sorting-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .sorting-buttons button {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +76,12 @@
             <input type="text" id="searchInput" class="form-control" placeholder="جستجو بر اساس نام یا عنوان...">
         </div>
 
+        <!-- دکمه‌های مرتب‌سازی -->
+        <div class="sorting-buttons">
+            <button class="btn btn-primary" id="sortFollowersBtn">مرتب‌سازی بر اساس فالوورها</button>
+            <button class="btn btn-secondary" id="sortJoinDateBtn">مرتب‌سازی بر اساس تاریخ عضویت</button>
+        </div>
+
         <div id="influencersContainer" class="row">
             <!-- کارت‌های اینفلوئنسرها به صورت داینامیک بارگذاری می‌شوند -->
         </div>
@@ -72,13 +91,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script>
+        // داده‌های اینفلوئنسرها (این داده‌ها باید از فایل JSON بارگذاری شوند)
+        let influencersData = [];
+
         // بارگذاری داده‌ها از فایل JSON
         async function loadInfluencersData() {
             try {
                 const response = await fetch('influencers.json');
-                const data = await response.json();
-                displayInfluencers(data); // نمایش همه اینفلوئنسرها
-                enableSearch(data); // فعال کردن قابلیت جستجو
+                influencersData = await response.json();
+                displayInfluencers(influencersData); // نمایش همه اینفلوئنسرها
+                enableSearch(influencersData); // فعال کردن قابلیت جستجو
             } catch (error) {
                 console.error('خطا در بارگذاری داده‌ها:', error);
             }
@@ -93,11 +115,17 @@
                 card.className = 'col-md-4';
                 card.innerHTML = `
                     <div class="influencer-card">
-                        <h5 class="card-title">${influencer.Name} (${influencer['Num. Followers']})</h5>
-                        <p><strong>عنوان:</strong> ${influencer.Title}</p>
-                        <p><strong>مهارت‌ها:</strong> ${influencer['Top Skills']}</p>
-                        <p><strong>تماس:</strong> ${influencer['Email / Contact']}</p>
-                        <p><strong>وب‌سایت:</strong> <a href="${influencer.Website}" target="_blank" class="btn-link">${influencer.Website}</a></p>
+                        <div class="d-flex align-items-center">
+                            <img src="${influencer.Image || 'default-image.jpg'}" alt="Profile Picture" class="me-3">
+                            <div>
+                                <h5 class="card-title">${influencer.Name} (${influencer['Num. Followers']})</h5>
+                                <p><strong>عنوان:</strong> ${influencer.Title}</p>
+                                <p><strong>مهارت‌ها:</strong> ${influencer['Top Skills']}</p>
+                                <p><strong>تماس:</strong> ${influencer['Email / Contact']}</p>
+                                <p><strong>زمان عضویت:</strong> ${influencer.JoinDate || 'نامشخص'}</p>
+                                <p><strong>وب‌سایت:</strong> <a href="${influencer.Website}" target="_blank" class="btn-link">${influencer.Website}</a></p>
+                            </div>
+                        </div>
                     </div>
                 `;
                 container.appendChild(card);
@@ -115,6 +143,27 @@
                 displayInfluencers(filteredData);
             });
         }
+
+        // مرتب‌سازی بر اساس فالوورها
+        function sortByFollowers(data) {
+            return data.sort((a, b) => parseInt(b['Num. Followers'].replace(/,/g, '')) - parseInt(a['Num. Followers'].replace(/,/g, '')));
+        }
+
+        // مرتب‌سازی بر اساس تاریخ عضویت
+        function sortByJoinDate(data) {
+            return data.sort((a, b) => new Date(b.JoinDate) - new Date(a.JoinDate));
+        }
+
+        // اضافه کردن رویداد به دکمه‌ها برای مرتب‌سازی
+        document.getElementById('sortFollowersBtn').addEventListener('click', function() {
+            const sortedData = sortByFollowers(influencersData);
+            displayInfluencers(sortedData);
+        });
+
+        document.getElementById('sortJoinDateBtn').addEventListener('click', function() {
+            const sortedData = sortByJoinDate(influencersData);
+            displayInfluencers(sortedData);
+        });
 
         // بارگذاری داده‌ها هنگام بارگذاری صفحه
         loadInfluencersData();

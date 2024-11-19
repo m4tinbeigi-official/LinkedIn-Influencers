@@ -1,34 +1,22 @@
 [
-  {
-    "Name": "Sepide Valiollah",
-    "Num. Followers": "90,000",
-    "Title": "Social Media Manager | LinkedIn Advertising Campaign Manager | Copywriter | Content Creator",
-    "Top Skills": "Storytelling, Social Media",
-    "Email / Contact": "9369387318",
-    "Website": "https://instagram.com/sepidehvaliollah"
-  },
-  {
-    "Name": "Atoosa Ahang",
-    "Num. Followers": "80,000",
-    "Title": "Co-Founder of sakoudar",
-    "Top Skills": "Teaching, Mentoring",
-    "Email / Contact": "atoosaahang37@gmail.com",
-    "Website": "https://www.instagram.com/atoosaahaang"
-  },
-  {
-    "Name": "Mahsa HafeziKhomamy",
-    "Num. Followers": "77,000",
-    "Title": "Top LinkedIn Influencer | +6M Impressions | Advertising Campaign Manager | Content Creator | Grows Businesses on Digital | 13+ Years International Digital Marketing Manager",
-    "Top Skills": "LinkedIn Training, LinkedIn Learning",
-    "Email / Contact": "t.me/mahsahafeziofficial",
-    "Website": "https://mohtavaly.com/"
-  },
-  {
-    "Name": "Sadaf Sadeghi",
-    "Num. Followers": "64,000",
-    "Title": "Content & campaign specialist at Digikala",
-    "Top Skills": "LinkedIn Advertising, SEO Copywriting",
-    "Email / Contact": "-",
-    "Website": "-"
-  }
+    {
+        "Name": "Sepide Valiollah",
+        "Num. Followers": "90,000",
+        "Title": "Social Media Manager | LinkedIn Advertising Campaign Manager | Copywriter | Content Creator",
+        "Top Skills": "Storytelling, Social Media",
+        "Email / Contact": "9369387318",
+        "Website": "https://instagram.com/sepidehvaliollah",
+        "Image": "https://link-to-image.jpg",
+        "JoinDate": "2017-05-12"
+    },
+    {
+        "Name": "Atoosa Ahang",
+        "Num. Followers": "80,000",
+        "Title": "Co-Founder of sakoudar",
+        "Top Skills": "Teaching, Mentoring",
+        "Email / Contact": "atoosaahang37@gmail.com",
+        "Website": "https://www.instagram.com/atoosaahaang",
+        "Image": "https://link-to-image.jpg",
+        "JoinDate": "2015-11-01"
+    }
 ]
