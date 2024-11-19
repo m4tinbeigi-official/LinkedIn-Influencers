@@ -1,28 +1,14 @@
 [
   {
-    "Name": "علی احمدی",
-    "Name_en": "Ali Ahmadi",
-    "Title": "مدیر ارشد بازاریابی",
+    "Name": "علی رضایی",
+    "Name_en": "Ali Rezaei",
+    "Title": "مدیرعامل",
     "Company": "شرکت ABC",
-    "Top Skills": "بازاریابی دیجیتال، استراتژی برندینگ",
+    "Top Skills": "مدیریت، برنامه‌نویسی",
     "Email / Contact": "ali@example.com",
-    "JoinDate": "2020-01-15",
-    "Website": "https://www.aliwebsite.com",
-    "Followers": 15000,  // فیلد جدید برای تعداد فالوورها
-    "Image": "https://example.com/images/ali.jpg",  // لینک عکس
-    "Linkedin": "ali-ahmadi"
-  },
-  {
-    "Name": "صابر راستی‌کردار",
-    "Name_en": "Saber Rastikardar",
-    "Title": "مدیر پروژه",
-    "Company": "شرکت XYZ",
-    "Top Skills": "مدیریت پروژه، نرم‌افزارهای کاربردی",
-    "Email / Contact": "saber@example.com",
-    "JoinDate": "2019-05-20",
-    "Website": "https://www.saberwebsite.com",
-    "Followers": 12000,  // فیلد جدید برای تعداد فالوورها
-    "Image": "https://example.com/images/saber.jpg",  // لینک عکس
-    "Linkedin": "saber-rastikardar"
+    "JoinDate": "2021-01-01",
+    "Website": "http://www.ali.com",
+    "Image": "http://example.com/image.jpg",
+    "Linkedin": "ali-rezaei"
   }
 ]
