@@ -1,22 +1,24 @@
 [
     {
-        "Name": "Sepide Valiollah",
-        "Num. Followers": "90,000",
-        "Title": "Social Media Manager | LinkedIn Advertising Campaign Manager | Copywriter | Content Creator",
-        "Top Skills": "Storytelling, Social Media",
-        "Email / Contact": "9369387318",
-        "Website": "https://instagram.com/sepidehvaliollah",
-        "Image": "https://link-to-image.jpg",
-        "JoinDate": "2017-05-12"
+        "Name": "سعید کیانی",
+        "Name_en": "Saeed Kiani",
+        "Title": "مدیر بازاریابی دیجیتال",
+        "Company": "شرکت الف",
+        "Top Skills": "بازاریابی دیجیتال, تبلیغات آنلاین, سئو",
+        "Email / Contact": "saeed.kiani@example.com",
+        "JoinDate": "2019",
+        "Website": "https://www.saeedkiani.com",
+        "Image": "https://www.example.com/saeed.jpg"
     },
     {
-        "Name": "Atoosa Ahang",
-        "Num. Followers": "80,000",
-        "Title": "Co-Founder of sakoudar",
-        "Top Skills": "Teaching, Mentoring",
-        "Email / Contact": "atoosaahang37@gmail.com",
-        "Website": "https://www.instagram.com/atoosaahaang",
-        "Image": "https://link-to-image.jpg",
-        "JoinDate": "2015-11-01"
+        "Name": "زهرا رضایی",
+        "Name_en": "Zahra Rezaei",
+        "Title": "محتوا نویس",
+        "Company": "شرکت ب",
+        "Top Skills": "نوشتن محتوا, استراتژی محتوا",
+        "Email / Contact": "zahra.rezaei@example.com",
+        "JoinDate": "2020",
+        "Website": "https://www.zahrarezaei.com",
+        "Image": "https://www.example.com/zahra.jpg"
     }
 ]

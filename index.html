@@ -14,7 +14,7 @@
             direction: rtl;
             text-align: right;
             background-color: #f4f7fc;
-            margin-bottom: 60px; /* برای جلوگیری از برخورد محتوا با فوتر */
+            margin-bottom: 60px;
         }
         .header {
             background-color: #0a66c2;
@@ -63,7 +63,7 @@
 
     <!-- جعبه جستجو -->
     <div class="search-bar">
-        <input type="text" id="searchInput" class="form-control" placeholder="جستجو بر اساس نام یا عنوان...">
+        <input type="text" id="searchInput" class="form-control" placeholder="جستجو در نام، عنوان، شرکت، مهارت‌ها...">
     </div>
 
     <!-- دکمه‌های مرتب‌سازی -->
@@ -80,6 +80,7 @@
                     <th>عکس</th>
                     <th>نام</th>
                     <th>عنوان</th>
+                    <th>شرکت</th>
                     <th>مهارت‌ها</th>
                     <th>تماس</th>
                     <th>زمان عضویت</th>
@@ -94,7 +95,7 @@
 
     <!-- فوتر -->
     <div class="footer">
-        <p>ساخته شده به قلب سفید توسط <a href="https://www.linkedin.com/in/your-profile" target="_blank">ریک سانچز</a>
+        <p>ساخته شده با 🤍 توسط <a href="https://www.linkedin.com/in/your-profile" target="_blank">ریک سانچز</a>
         <a href="https://www.linkedin.com/in/your-profile" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a></p>
@@ -128,8 +129,9 @@
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td><img src="${influencer.Image || 'default-image.jpg'}" alt="Profile Picture" class="img-fluid" style="width: 50px; height: 50px;"></td>
-                    <td>${influencer.Name}</td>
+                    <td><a href="https://www.linkedin.com/in/${influencer.Name_en}" target="_blank">${influencer.Name} (${influencer.Name_en})</a></td>
                     <td>${influencer.Title}</td>
+                    <td>${influencer.Company}</td>
                     <td>${influencer['Top Skills']}</td>
                     <td>${influencer['Email / Contact']}</td>
                     <td>${influencer.JoinDate || 'نامشخص'}</td>
@@ -145,32 +147,18 @@
             searchInput.addEventListener('input', function(event) {
                 const query = event.target.value.toLowerCase();
                 const filteredData = data.filter(influencer => {
-                    return influencer.Name.toLowerCase().includes(query) || influencer.Title.toLowerCase().includes(query);
+                    return influencer.Name.toLowerCase().includes(query) ||
+                           influencer.Name_en.toLowerCase().includes(query) ||
+                           influencer.Title.toLowerCase().includes(query) ||
+                           influencer.Company.toLowerCase().includes(query) ||
+                           influencer['Top Skills'].toLowerCase().includes(query) ||
+                           influencer['Email / Contact'].toLowerCase().includes(query) ||
+                           influencer.JoinDate.toLowerCase().includes(query) ||
+                           influencer.Website.toLowerCase().includes(query);
                 });
                 displayInfluencers(filteredData);
             });
         }
-
-        // مرتب‌سازی بر اساس فالوورها
-        function sortByFollowers(data) {
-            return data.sort((a, b) => parseInt(b['Num. Followers'].replace(/,/g, '')) - parseInt(a['Num. Followers'].replace(/,/g, ''))); 
-        }
-
-        // مرتب‌سازی بر اساس تاریخ عضویت
-        function sortByJoinDate(data) {
-            return data.sort((a, b) => new Date(b.JoinDate) - new Date(a.JoinDate));
-        }
-
-        // اضافه کردن رویداد به دکمه‌ها برای مرتب‌سازی
-        document.getElementById('sortFollowersBtn').addEventListener('click', function() {
-            const sortedData = sortByFollowers(influencersData);
-            displayInfluencers(sortedData);
-        });
-
-        document.getElementById('sortJoinDateBtn').addEventListener('click', function() {
-            const sortedData = sortByJoinDate(influencersData);
-            displayInfluencers(sortedData);
-        });
 
         // بارگذاری داده‌ها هنگام بارگذاری صفحه
         loadInfluencersData();
