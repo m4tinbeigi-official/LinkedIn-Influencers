@@ -141,7 +141,7 @@
         // بارگذاری داده‌ها از فایل JSON
         async function loadInfluencersData() {
             try {
-                const response = await fetch('influencers.json');
+                const response = await fetch('./influencers.json');
                 influencersData = await response.json();
                 displayInfluencers(influencersData); // نمایش همه اینفلوئنسرها
                 enableSearch(influencersData); // فعال کردن قابلیت جستجو
