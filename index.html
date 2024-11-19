@@ -111,6 +111,24 @@
         .notification-container .link-button:hover {
             background-color: #e0a900;
         }
+		
+		/* استایل برای QR کد */
+        .qr-container {
+            margin-top: 40px;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .qr-container h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .qr-container img {
+            max-width: 200px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -128,6 +146,14 @@
         </a>
     </div>
 
+	<!-- اضافه کردن QR کد -->
+    <div class="qr-container">
+        <h3>برای دسترسی سریع به لینک، QR کد را اسکن کنید</h3>
+        <!-- لینک مستقیم به سرویس تولید QR کد -->
+        <a href="https://B2n.ir/LinkedIn-Influencers" target="_blank">
+            <img src="https://m4tinbeigi-official.github.io/LinkedIn-Influencers/qrcode.png" alt="QR Code">
+        </a>
+    </div>
     <!-- جعبه جستجو -->
     <div class="search-bar">
         <input type="text" id="searchInput" class="form-control" placeholder="جستجو در نام، عنوان، شرکت، مهارت‌ها...">
