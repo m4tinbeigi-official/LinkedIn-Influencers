@@ -26,37 +26,6 @@
         .search-bar {
             margin: 20px 0;
         }
-        .influencer-card {
-            margin-bottom: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-        }
-        .card-title {
-            color: #0a66c2;
-        }
-        .card-body {
-            font-size: 14px;
-        }
-        .card-footer {
-            background-color: #f7f9fa;
-            text-align: center;
-        }
-        .btn-link {
-            color: #0a66c2;
-        }
-        .search-bar input {
-            border-radius: 25px;
-            padding: 10px;
-            width: 100%;
-            border: 1px solid #ddd;
-        }
-        .influencer-card img {
-            border-radius: 50%;
-            width: 80px;
-            height: 80px;
-        }
         .sorting-buttons {
             display: flex;
             justify-content: flex-end;
@@ -64,6 +33,9 @@
         }
         .sorting-buttons button {
             margin-left: 10px;
+        }
+        .table th, .table td {
+            vertical-align: middle;
         }
         .footer {
             background-color: #0a66c2;
@@ -100,8 +72,24 @@
         <button class="btn btn-secondary" id="sortJoinDateBtn">مرتب‌سازی بر اساس تاریخ عضویت</button>
     </div>
 
-    <div id="influencersContainer" class="row">
-        <!-- کارت‌های اینفلوئنسرها به صورت داینامیک بارگذاری می‌شوند -->
+    <!-- جدول اینفلوئنسرها -->
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>عکس</th>
+                    <th>نام</th>
+                    <th>عنوان</th>
+                    <th>مهارت‌ها</th>
+                    <th>تماس</th>
+                    <th>زمان عضویت</th>
+                    <th>وب‌سایت</th>
+                </tr>
+            </thead>
+            <tbody id="influencersContainer">
+                <!-- داده‌ها به صورت داینامیک بارگذاری می‌شوند -->
+            </tbody>
+        </table>
     </div>
 
     <!-- فوتر -->
@@ -112,7 +100,7 @@
         </a></p>
     </div>
 
-    <!-- لینک به جاوا اسکریپت های Bootstrap -->
+    <!-- لینک به جاوا اسکریپت های Bootstrap و FontAwesome -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- برای آیکون لینکدین -->
@@ -132,29 +120,22 @@
             }
         }
 
-        // نمایش اینفلوئنسرها در صفحه
+        // نمایش اینفلوئنسرها در جدول
         function displayInfluencers(data) {
             const container = document.getElementById('influencersContainer');
             container.innerHTML = ''; // ابتدا محتوای قبلی را پاک می‌کنیم
             data.forEach(influencer => {
-                const card = document.createElement('div');
-                card.className = 'col-md-4';
-                card.innerHTML = `
-                    <div class="influencer-card">
-                        <div class="d-flex align-items-center">
-                            <img src="${influencer.Image || 'default-image.jpg'}" alt="Profile Picture" class="me-3">
-                            <div>
-                                <h5 class="card-title">${influencer.Name} (${influencer['Num. Followers']})</h5>
-                                <p><strong>عنوان:</strong> ${influencer.Title}</p>
-                                <p><strong>مهارت‌ها:</strong> ${influencer['Top Skills']}</p>
-                                <p><strong>تماس:</strong> ${influencer['Email / Contact']}</p>
-                                <p><strong>زمان عضویت:</strong> ${influencer.JoinDate || 'نامشخص'}</p>
-                                <p><strong>وب‌سایت:</strong> <a href="${influencer.Website}" target="_blank" class="btn-link">${influencer.Website}</a></p>
-                            </div>
-                        </div>
-                    </div>
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><img src="${influencer.Image || 'default-image.jpg'}" alt="Profile Picture" class="img-fluid" style="width: 50px; height: 50px;"></td>
+                    <td>${influencer.Name}</td>
+                    <td>${influencer.Title}</td>
+                    <td>${influencer['Top Skills']}</td>
+                    <td>${influencer['Email / Contact']}</td>
+                    <td>${influencer.JoinDate || 'نامشخص'}</td>
+                    <td><a href="${influencer.Website}" target="_blank" class="btn-link">${influencer.Website}</a></td>
                 `;
-                container.appendChild(card);
+                container.appendChild(row);
             });
         }
 
