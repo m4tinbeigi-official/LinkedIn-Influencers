@@ -1,26 +1,28 @@
 [
-    {
-        "Name": "سعید کیانی",
-        "Name_en": "Saeed Kiani",
-		"Linkedin":"#",
-        "Title": "مدیر بازاریابی دیجیتال",
-        "Company": "شرکت الف",
-        "Top Skills": "بازاریابی دیجیتال, تبلیغات آنلاین, سئو",
-        "Email / Contact": "saeed.kiani@example.com",
-        "JoinDate": "2019",
-        "Website": "https://www.saeedkiani.com",
-        "Image": "https://www.example.com/saeed.jpg"
-    },
-    {
-        "Name": "زهرا رضایی",
-        "Name_en": "Zahra Rezaei",
-		"Linkedin":"#",
-        "Title": "محتوا نویس",
-        "Company": "شرکت ب",
-        "Top Skills": "نوشتن محتوا, استراتژی محتوا",
-        "Email / Contact": "zahra.rezaei@example.com",
-        "JoinDate": "2020",
-        "Website": "https://www.zahrarezaei.com",
-        "Image": "https://www.example.com/zahra.jpg"
-    }
+  {
+    "Name": "علی احمدی",
+    "Name_en": "Ali Ahmadi",
+    "Title": "مدیر ارشد بازاریابی",
+    "Company": "شرکت ABC",
+    "Top Skills": "بازاریابی دیجیتال، استراتژی برندینگ",
+    "Email / Contact": "ali@example.com",
+    "JoinDate": "2020-01-15",
+    "Website": "https://www.aliwebsite.com",
+    "Followers": 15000,  // فیلد جدید برای تعداد فالوورها
+    "Image": "https://example.com/images/ali.jpg",  // لینک عکس
+    "Linkedin": "ali-ahmadi"
+  },
+  {
+    "Name": "صابر راستی‌کردار",
+    "Name_en": "Saber Rastikardar",
+    "Title": "مدیر پروژه",
+    "Company": "شرکت XYZ",
+    "Top Skills": "مدیریت پروژه، نرم‌افزارهای کاربردی",
+    "Email / Contact": "saber@example.com",
+    "JoinDate": "2019-05-20",
+    "Website": "https://www.saberwebsite.com",
+    "Followers": 12000,  // فیلد جدید برای تعداد فالوورها
+    "Image": "https://example.com/images/saber.jpg",  // لینک عکس
+    "Linkedin": "saber-rastikardar"
+  }
 ]

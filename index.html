@@ -25,7 +25,6 @@
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        /* استایل برای جعبه جستجو که در وسط قرار می‌گیرد */
         .search-bar {
             margin-top: 20px;
             display: flex;
@@ -112,6 +111,7 @@
                     <th>مهارت‌ها</th>
                     <th>تماس</th>
                     <th>زمان عضویت</th>
+                    <th>فالوورها</th> <!-- فیلد جدید -->
                     <th>وب‌سایت</th>
                 </tr>
             </thead>
@@ -164,6 +164,7 @@
                     <td>${influencer['Top Skills']}</td>
                     <td>${influencer['Email / Contact']}</td>
                     <td>${influencer.JoinDate || 'نامشخص'}</td>
+                    <td>${influencer.Followers || 'نامشخص'}</td> <!-- نمایش فالوورها -->
                     <td><a href="${influencer.Website}" target="_blank" class="btn-link">${influencer.Website}</a></td>
                 `;
                 container.appendChild(row);
