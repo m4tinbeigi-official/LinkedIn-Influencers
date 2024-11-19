@@ -10,7 +10,7 @@
     "Website": "http://www.ali.com",
     "Image": "http://example.com/image.jpg",
     "Linkedin": "ali-rezaei",
-    "Followers": "1,200"  
+    "Followers": "1,200"
   },
   {
     "Name": "مریم اسلامی",
@@ -23,7 +23,7 @@
     "Website": "http://www.maryam.com",
     "Image": "http://example.com/image2.jpg",
     "Linkedin": "maryam-islami",
-    "Followers": "3,500"  
+    "Followers": "3,500"
   },
   {
     "Name": "حسن کاظمی",
@@ -36,6 +36,6 @@
     "Website": "http://www.hassan.com",
     "Image": "http://example.com/image3.jpg",
     "Linkedin": "hassan-kazemi",
-    "Followers": "500"  
+    "Followers": "500"
   }
 ]
