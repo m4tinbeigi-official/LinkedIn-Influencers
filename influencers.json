@@ -9,6 +9,33 @@
     "JoinDate": "2021-01-01",
     "Website": "http://www.ali.com",
     "Image": "http://example.com/image.jpg",
-    "Linkedin": "ali-rezaei"
+    "Linkedin": "ali-rezaei",
+    "Followers": "1,200"  
+  },
+  {
+    "Name": "مریم اسلامی",
+    "Name_en": "Maryam Islami",
+    "Title": "مدیر بازاریابی",
+    "Company": "شرکت XYZ",
+    "Top Skills": "بازاریابی، استراتژی کسب و کار",
+    "Email / Contact": "maryam@example.com",
+    "JoinDate": "2019-05-15",
+    "Website": "http://www.maryam.com",
+    "Image": "http://example.com/image2.jpg",
+    "Linkedin": "maryam-islami",
+    "Followers": "3,500"  
+  },
+  {
+    "Name": "حسن کاظمی",
+    "Name_en": "Hassan Kazemi",
+    "Title": "پژوهشگر و مشاور فناوری",
+    "Company": "شرکت DEF",
+    "Top Skills": "پژوهش، نوآوری در فناوری",
+    "Email / Contact": "hassan@example.com",
+    "JoinDate": "2022-03-22",
+    "Website": "http://www.hassan.com",
+    "Image": "http://example.com/image3.jpg",
+    "Linkedin": "hassan-kazemi",
+    "Followers": "500"  
   }
 ]
