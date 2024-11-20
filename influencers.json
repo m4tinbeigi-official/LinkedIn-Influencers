@@ -11,17 +11,367 @@
     "Image": "https://media.licdn.com/dms/image/v2/D4E03AQEOr5ySW-fahw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1721369789726?e=1737590400&v=beta&t=wOz1x1jdSy_FS1pOSSwndn7GQKnUX2K24hAzj2JXbyc",
     "Linkedin": "matinbeigi",
     "Followers": "22000"
-  },{
-    "Name": "ریک سانچز (متین بیگی)",
-    "Name_en": "Rick Sanchez (Matin Beigi)",
-    "Title": "Wubba lubba dub dub!",
-    "Company": "Adult Swim",
-    "Top Skills": "Digital Marketing, Programming, Event orgenizer",
-    "Email / Contact": "m4tinbeigi@gmail.com",
-    "JoinDate": "2105",
-    "Website": "http://ricksanchez.ir",
-    "Image": "https://media.licdn.com/dms/image/v2/D4E03AQEOr5ySW-fahw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1721369789726?e=1737590400&v=beta&t=wOz1x1jdSy_FS1pOSSwndn7GQKnUX2K24hAzj2JXbyc",
-    "Linkedin": "matinbeigi",
-    "Followers": "22000"
+  },
+  {
+    "Name": "Sepide Valiollah",
+    "Name_en": "Sepide Valiollah",
+    "Title": "Social Media Manager | LinkedIn Advertising Campaign Manager | Copywriter | Content Creator",
+    "Company": "-",
+    "Top Skills": "Storytelling, Social Media",
+    "Email / Contact": "9369387318",
+    "JoinDate": "-",
+    "Website": "https://instagram.com/sepidehvaliollah",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "90,000"
+  },
+  {
+    "Name": "Atoosa Ahang",
+    "Name_en": "Atoosa Ahang",
+    "Title": "Co-Founder of sakoudar",
+    "Company": "sakoudar",
+    "Top Skills": "Teaching, Mentoring",
+    "Email / Contact": "atoosaahang37@gmail.com",
+    "JoinDate": "-",
+    "Website": "https://www.instagram.com/atoosaahaang",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "80,000"
+  },
+  {
+    "Name": "Mahsa HafeziKhomamy",
+    "Name_en": "Mahsa HafeziKhomamy",
+    "Title": "Top LinkedIn Influencer | +6M Impressions | Advertising Campaign Manager | Content Creator | Grows Businesses on Digital | 13+ Years International Digital Marketing Manager",
+    "Company": "-",
+    "Top Skills": "LinkedIn Training, LinkedIn Learning",
+    "Email / Contact": "t.me/mahsahafeziofficial",
+    "JoinDate": "-",
+    "Website": "https://mohtavaly.com/",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "77,000"
+  },
+  {
+    "Name": "Sadaf Sadeghi",
+    "Name_en": "Sadaf Sadeghi",
+    "Title": "Content & campaign specialist at Digikala",
+    "Company": "Digikala",
+    "Top Skills": "LinkedIn Advertising, SEO Copywriting",
+    "Email / Contact": "-",
+    "JoinDate": "-",
+    "Website": "-",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "64,000"
+  },
+  {
+    "Name": "Nazanin Shanbezade",
+    "Name_en": "Nazanin Shanbezade",
+    "Title": "Psychotherapist",
+    "Company": "-",
+    "Top Skills": "Organizational Psychology, Individual Counselling",
+    "Email / Contact": "sh.nazi1v@gmail.com",
+    "JoinDate": "-",
+    "Website": "https://pezeshkekhoob.com/doctor/56039-nazanin-shanbezade",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "54,000"
+  },
+  {
+    "Name": "ADEL TALEBI",
+    "Name_en": "ADEL TALEBI",
+    "Title": "Founder @ Optimum Digital Marketing Agency (Canada), Monazam Marketing Agency | Business Developer | Digital Marketing & Digital Strategy Teacher @ University of Tehran & IMI | Digital Marketing Strategist",
+    "Company": "Optimum Digital Marketing Agency, Monazam Marketing Agency",
+    "Top Skills": "Strategy, Marketing Strategy",
+    "Email / Contact": "adel.talebi@gmail.com",
+    "JoinDate": "-",
+    "Website": "atalebi.com",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "52,000"
+  },
+  {
+    "Name": "Lana Zendehdel-Akl",
+    "Name_en": "Lana Zendehdel-Akl",
+    "Title": "Founder @ HR-Headhunting Crew HHC | Recruitment, HR Consulting",
+    "Company": "HR-Headhunting Crew HHC",
+    "Top Skills": "Time Management, Internal Communications",
+    "Email / Contact": "lana.zendehdel@hotmail.com",
+    "JoinDate": "-",
+    "Website": "http://www.hr-headhuntingcrew.com/",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "52,000"
+  },
+  {
+    "Name": "Neda Arouzi",
+    "Name_en": "Neda Arouzi",
+    "Title": "Digital Marketing Specialist | Social Media Marketing Manager | Content Creator | MBA | MSc Marketing | Help brands increase sales",
+    "Company": "-",
+    "Top Skills": "Instagram Analytics, Online Content Creation",
+    "Email / Contact": "neda.aroozi95@gmail.com",
+    "JoinDate": "-",
+    "Website": "nedastory.com",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "48,000"
+  },
+  {
+    "Name": "Zeinab Khakpour",
+    "Name_en": "Zeinab Khakpour",
+    "Title": "Recruitment and acquisition/Human Resources Facilitator",
+    "Company": "-",
+    "Top Skills": "Time Management, Communication",
+    "Email / Contact": "zeinabkhakpour98@gmail.com",
+    "JoinDate": "-",
+    "Website": "-",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "47,000"
+  },
+  {
+    "Name": "Mona Dezhban",
+    "Name_en": "Mona Dezhban",
+    "Title": "Content Production Manager at Digikala-Founder Of Vajeban-Facebook (Meta) Ads Manager",
+    "Company": "Digikala, Vajeban",
+    "Top Skills": "Branding, Content Production",
+    "Email / Contact": "-",
+    "JoinDate": "-",
+    "Website": "vajeban.com",
+    "Image": "-",
+    "Linkedin": "-",
+    "Followers": "46,000"
+  },
+  {
+    "name": "Alireza Arjmand",
+    "Followers": "23,700",
+    "title": "CEO / Sales & Strategy / Senior Advisor/ Omnichannel Retailers/ Sales & Marketing Consultant / Lecturer",
+    "skills": ["Management", "Sales Management"],
+    "email": "arjmandalireza@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Behnam Karim",
+    "Followers": "23,500",
+    "title": "Accountant & Auditor & Tax & Business, Insurance Law",
+    "skills": ["Risk Management", "Governance, Risk Management, and Compliance (GRC)"],
+    "email": "ermiakarimi@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Mehran Bazoubandi",
+    "Followers": "23,400",
+    "title": "Shift Supervisor at Hafez Tile & Ceramic Co.",
+    "skills": ["Leadership Development", "Microsoft Office"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Amin (امین مرغزاری) Marghzari",
+    "Followers": "23,300",
+    "title": "Founder of Different Approach | Mentoring | Leadership | Senior Software Developer | Backend | .Net Core | API | Microservices",
+    "skills": ["Speckflow", "Continuous Integration and Continuous Delivery (CI/CD)"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Alireza Ebrahimian",
+    "Followers": "23,200",
+    "title": "Digital Marketing Manager | Founder at Digitaling",
+    "skills": ["LinkedIn Marketing", "Content Strategy"],
+    "email": "-",
+    "website": "digitaling.org"
+  },
+  {
+    "name": "Seyed HamidReza Azimi",
+    "Followers": "23,000",
+    "title": "Digital Marketing Consultant",
+    "skills": ["Statistics", "Social Media Marketing"],
+    "email": "azimi@myindustry.ir",
+    "website": "hamidazimi.ir"
+  },
+  {
+    "name": "Samaneh Khodaei",
+    "Followers": "23,000",
+    "title": "Senior Social Media Specialist at Khanoumi",
+    "skills": ["Social Media Strategy", "Content Strategy"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Nima Qazi",
+    "Followers": "22,700",
+    "title": "Co-Founder, Donse & Alibaba.ir; Chairman at ETchamber",
+    "skills": ["Marketing Strategy", "Leadership"],
+    "email": "-",
+    "website": "https://etchamber.ir/"
+  },
+  {
+    "name": "Farnoosh Delkash",
+    "Followers": "22,700",
+    "title": "Human Resources Manager",
+    "skills": ["Recruiting", "Temporary Placement"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Khatereh Dorgari",
+    "Followers": "22,500",
+    "title": "Business Strategy | Market Research | Project Planning | Research & Development",
+    "skills": ["Analytical Skills", "Problem Solving"],
+    "email": "khatereh.dorgari@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Mehdi Fallahi",
+    "Followers": "22,500",
+    "title": "PhD Candidate, DBA HR, Human Resources Manager, Competency Assessor",
+    "skills": ["Interviewing", "Human Resource Development"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Armin Khoshvaghti",
+    "Followers": "21,800",
+    "title": "Human Resource Consultant | Labor Law Consultant | Lecturer | Speaker | Founder & CEO at Saramad HRD",
+    "skills": ["Microsoft Office", "Recruiting"],
+    "email": "armin.khoshvaghti@gmail.com",
+    "website": "tamasco.ir"
+  },
+  {
+    "name": "Hojjat Mesgari",
+    "Followers": "21,400",
+    "title": "SEO Manager at BimeBazar | Ex Senior SEO Specialist at Divar",
+    "skills": ["Search Engine Optimization (SEO)", "Digital Marketing"],
+    "email": "hojat.mesgar@gmail.com",
+    "website": "FreeSeoForEver.ir"
+  },
+  {
+    "name": "Hamid Mahmoudzadeh",
+    "Followers": "21,200",
+    "title": "Founder and CEO at Didar CRM",
+    "skills": ["Software Development", "Start-ups"],
+    "email": "mahmoudzadeh@gmail.com",
+    "website": "https://didar.me/"
+  },
+  {
+    "name": "HoomUn IraniNejad ⭐ هومان ایرانی نژاد",
+    "Followers": "21,200",
+    "title": "Business Consultant | DBA Knowable | MBA Strategy | Coaching Graduate | Product Owner | Product Manager | CRM Solution Consultant",
+    "skills": ["Change management", "Unified Threat Management"],
+    "email": "h.irani.work@gmail.com",
+    "website": "cafedynamic.com"
+  },
+  {
+    "name": "Yashar Moshirfar",
+    "Followers": "21,010",
+    "title": "Chief Brand & Marketing Officer at Hoodadj | Leading Creative Marketing Strategies",
+    "skills": ["Strategic Marketing Management", "Creative Marketer"],
+    "email": "y.moshirfar@gmail.com",
+    "website": "moshirfar.net"
+  },
+  {
+    "name": "Sara Nazari",
+    "Followers": "21,000",
+    "title": "International Management Consultant | HR Solution Designer | People & Tech Enthusiast | Keynote Speaker | Leadership Advisor | Author",
+    "skills": ["Human Resource Development", "Staff Development"],
+    "email": "saranazari.hr@gmail.com",
+    "website": "saranazari.com"
+  },
+  {
+    "name": "Ali Rashidi Kouchi",
+    "Followers": "20,870",
+    "title": "Oillett Startup Founder | Founder at STeam Startup",
+    "skills": ["Mechanical Product Design"],
+    "email": "shayanb612@yahoo.com",
+    "website": "-"
+  },
+  {
+    "name": "Hamid Amirsemsari",
+    "Followers": "20,700",
+    "title": "Spiritual Sales & Marketing Leadership",
+    "skills": ["Direct Sales", "Renovation"],
+    "email": "amirsemsari@gmail.com",
+    "website": "technosharif.com"
+  },
+  {
+    "name": "Mahboobeh Khosrojerdi",
+    "Followers": "20,000",
+    "title": "English Language Instructor, Certified Teacher Trainer, English Language Consultant",
+    "skills": ["English", "English for Specific Purposes"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Fatemeh (Mahsa) Naseri",
+    "Followers": "20,000",
+    "title": "SEO Specialist | Content Strategist",
+    "skills": ["Content Creation", "Content Administration"],
+    "email": "ad.mahsanaseri@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Shayan Shalileh",
+    "Followers": "19,800",
+    "title": "Growth Manager @ Golrang Ventures | Founder @ Iran Web and Mobile Festival",
+    "skills": ["Talent Management", "Social Media"],
+    "email": "shayan.shalileh@gmail.com",
+    "website": "shalileh.landin.ir"
+  },
+  {
+    "name": "Arman Ayazi",
+    "Followers": "19,400",
+    "title": "Senior Developer",
+    "skills": ["SDKs", "SDK development"],
+    "email": "armanayazi7@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Arfa M.",
+    "Followers": "19,000",
+    "title": "Front-end Developer",
+    "skills": ["JavaScript", "React.js"],
+    "email": "-",
+    "website": "-"
+  },
+  {
+    "name": "Mahshid Abri",
+    "Followers": "19,000",
+    "title": "Digital Marketing Manager / Campaign Manager / Digital Marketing Consultant",
+    "skills": ["Management", "Paid Social Media Advertising"],
+    "email": "mahshidabrii@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Nima Shafiezadeh",
+    "Followers": "18,900",
+    "title": "Co-Founder & General Manager @balconstudio 🌙 & @balconmag 🪄 Interested in content, marketing, communications, complexities, and creativity.",
+    "skills": ["Communication", "Marketing"],
+    "email": "nima.shafiezadeh@gmail.com",
+    "website": "nimashafiezadeh.com"
+  },
+  {
+    "name": "Afra Dadras",
+    "Followers": "18,100",
+    "title": "HR Manager @MSVCO",
+    "skills": ["Microsoft Word", "Project Management"],
+    "email": "dadres.a@gmail.com",
+    "website": "-"
+  },
+  {
+    "name": "Mahmoud Zibania",
+    "Followers": "18,700",
+    "title": "CEO Advisor / Organizational Consulting / HR Consulting / ISO IEC",
+    "skills": ["System Engineering", "Environmental Management Systems"],
+    "email": "ma_zibania@yahoo.com",
+    "website": "-"
+  },
+  {
+    "name": "Hadi Moradi",
+    "Followers": "18,600",
+    "title": "Founder at DM board & DM talk",
+    "skills": ["Strategy", "Journalism"],
+    "email": "-",
+    "website": "Dmboard.media"
   }
 ]
